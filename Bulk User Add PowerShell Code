@@ -1,7 +1,0 @@
-Powershell Codes----------------------------------------------------------------------------------
-Install MsOnline: Install-Module MSOnline
-Microsoft 365 Account Connect: Connect-msolservice
-Users Check: get-msoluser
-Teanant Sku Check: get-msolaccountsku
-Single User Create: new-msoluser
-Bulk User Create: Import-Csv -Path "......." | ForEach { New-Msoluser -UserPrincipalName $_.UserPrincipalName -FirstName $_.FirstName -LastName $_.LastName -DisplayName "$($_.Firstname) $($_.Lastname)" -Password $_.Password -Licenseassignment $_.License -UsageLocation "BD"}
